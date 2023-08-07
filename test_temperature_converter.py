@@ -25,6 +25,7 @@ class TestConverter:
         assert temperature_converter.c_to_f(-0.5555555555) == pytest.approx(31.0)
         # Test errors
         pytest.raises(TypeError, temperature_converter.c_to_f, "freezing")
+        
         # another way to make the raises() function raise the TypeError with 
         # the argument "freezing":
         # with pytest.raises(TypeError):
